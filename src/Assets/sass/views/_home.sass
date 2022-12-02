@@ -1,0 +1,30 @@
+/*PAGINA PRINCIPAL*/
+
+.grid-principal-default
+    display: grid
+    grid-template-columns: 1fr 1fr
+    @media (max-width: $breakpoint-mobile)
+        grid-template-columns: 1fr
+    .resultados-default
+        font-family: $fuente-principal
+        color: $blanco
+        background-color: $gris-oscuro
+        overflow-y: hidden
+        height: 100%
+        @media (max-width: $breakpoint-mobile)
+            display: none
+        .grid-resultados-default
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr))
+            align-content: baseline
+            justify-items: center
+            grid-gap: 20px
+            padding: 25px
+            display: grid
+            overflow-y: scroll
+            height: 100%
+    .busqueda-default
+        background-color: $gris-claro
+        display: grid
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: 1fr
+        

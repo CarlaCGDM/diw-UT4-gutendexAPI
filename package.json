@@ -1,0 +1,20 @@
+{
+  "name": "my-project",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "parcel:dev": "parcel src/index.html",
+    "parcel:build": "parcel build src/index.html",
+    "clean": "rimraf dist .parcel-cache",
+    "dev": "npm-run all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "@parcel/package-manager": "^2.8.0",
+    "sass-reset": "^1.0.4"
+  }
+}
