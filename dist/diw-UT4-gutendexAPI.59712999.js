@@ -535,4 +535,4 @@ function hmrAcceptRun(bundle, id) {
 
 },{}]},["lX4BT","4M6V8"], "4M6V8", "parcelRequire716c")
 
-//# sourceMappingURL=MaquetacionDiseño.59712999.js.map
+//# sourceMappingURL=diw-UT4-gutendexAPI.59712999.js.map
