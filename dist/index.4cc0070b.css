@@ -42,8 +42,7 @@ body > header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding: 1vh 2vw;
   display: flex;
 }
 
