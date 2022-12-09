@@ -1,4 +1,0 @@
--importar fuentes
--media query proporcion cambiante busqueda/resultados escritorio
--organizar carpetas sass https://latteandcode.medium.com/c%C3%B3mo-organizar-los-archivos-sass-de-tu-proyecto-c8b02242d95
--cambiar clases movil usando absolute etc.
