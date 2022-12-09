@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book API</title>
   <link rel="stylesheet" href="Assets/sass/main.sass">
 </head>
@@ -11,18 +13,37 @@
 
   <!--header-->
   <header>
-    <div>
+    <section class="logo">
       <a><img src="Assets/images/logo.svg"></a>
-      <small><i>Powered by <a href="https://gutendex.com/">Gutendex</a></i></small>
-    </div>
-    <div>
-      <small>Usuario invitado</small>
-      <img src="Assets/images/defaultIcon.png">
-    </div>
+      <small>Powered by </br><a href="https://gutendex.com/">Gutendex</a></small>
+    </section>
+    <section class="avatar">
+      <small>@_invitado</small>
+      <img src="Assets/images/sample_user_pictures/no-profile-picture.svg">
+    </section>
   </header>
   <!--header end-->
 
   <main class="grid-principal-default">
+
+    <!--navigation-->
+    <nav>
+      <section class="menu">
+        <img src="Assets/images/sample_user_pictures/no-profile-picture.svg" />
+        <small>@_invitado</small>
+        <a href="login.html"><button class="primary-button">Login</button></a>
+        <a href="registro.html"><button class="secondary-button">Registro</button></a>
+      </section>
+      <section class="contact">
+        <a href="contacto.html"><small>Contacto</small></a>
+        <img src="Assets/images/icons/write.svg" />
+      </section>
+    </nav>
+    <!--navigation end-->
+
+
+
+
     <section class="busqueda-default" id="seccion-busqueda">
       <!-- SECCIÓN BÚSQUEDA-->
       <!--Textos-->
