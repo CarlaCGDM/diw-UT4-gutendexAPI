@@ -7,23 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="Assets/sass/main.sass">
+    <script src="Assets/js/animations.js"></script>
 </head>
 
 <body>
     <!--header-->
     <header>
         <section class="logo">
-            <a><img src="Assets/images/logo.svg"></a>
+            <a href="index.html"><img src="Assets/images/logo.svg"></a>
             <small>Powered by </br><a href="https://gutendex.com/">Gutendex</a></small>
         </section>
         <section class="avatar">
             <small>@_invitado</small>
-            <img src="Assets/images/defaultIcon.png">
+            <img src="Assets/images/sample_user_pictures/no-profile-picture.svg" onclick="toggleNavbar()">
         </section>
     </header>
     <!--header end-->
 
     <main>
+
+
+        <!--navigation-->
+        <nav>
+            <section class="menu">
+                <img src="Assets/images/sample_user_pictures/no-profile-picture.svg" />
+                <small>@_invitado</small>
+                <a href="login.html"><button class="primary-button">Login</button></a>
+                <a href="registro.html"><button class="secondary-button">Registro</button></a>
+            </section>
+            <section class="contact">
+                <a href="contacto.html"><small>Contacto</small></a>
+                <img src="Assets/images/icons/write.svg" />
+            </section>
+        </nav>
+        <!--navigation end-->
 
         <!-- formulario de contacto -->
         <section>

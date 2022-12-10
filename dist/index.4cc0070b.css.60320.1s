@@ -211,23 +211,13 @@ body > main > nav > .contact {
   height: 50vh;
   background-color: #000;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   font-family: Nunito, sans-serif;
   display: flex;
 }
 
-.login .login-form > fieldset {
-  border: none;
-  flex-direction: column;
-  display: flex;
-}
-
 .login > h1 {
   text-align: center;
-  font-family: Tiro Kannada, serif;
-  font-size: 2em;
 }
 
 /*# sourceMappingURL=index.4cc0070b.css.map */
