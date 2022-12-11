@@ -8,43 +8,37 @@
     align-items: center
     gap: 20px
     
+    > header
+        padding: 2vw
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        background-color: $rojo-oscuro
+        @media (max-width: $breakpoint-mobile)
+            flex-direction: column
+            gap: 1vh
+
+        > div
+            > select
+                width: 12vw
+                text-align: center
+                @media (max-width: $breakpoint-mobile)
+                    width: 40vw
+
+        > h1
+            text-align: center
+            font-family: $fuente-secundaria
+            font-size: 2em
     
     .faved-grid
-        background-color: $negro
-        color: $blanco
-        font-family: $fuente-principal
-        width: 50vw
-        height: 60vh
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        gap: 10px
-        border-radius: 10px 10px 0px 0px
-        @media (max-width: $breakpoint-mobile)
-            width: 100vw
-            border-radius: 0px
-            height: 60vh
-        @media (max-width: $breakpoint-mobile-mini)
-            height: 70vh
-
-        > fieldset
-            border: none
-            display: flex
-            flex-direction: column
-            gap: 5px
-
-            > div
-                text-align: center
-
-    > h1
-        text-align: center
-        font-family: $fuente-secundaria
-        font-size: 2em
-
-    > img
-        width: 4vw
-        @media (max-width: $breakpoint-mobile)
-            width: 15vw
-        @media (max-width: $breakpoint-mobile-mini)
-            display: none
+        width: 100%
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr))
+        align-content: baseline
+        justify-items: center
+        grid-gap: 20px
+        padding: 25px
+        display: grid
+        overflow-y: scroll
+        height: 100%
