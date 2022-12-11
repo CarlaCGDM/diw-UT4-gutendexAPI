@@ -623,6 +623,7 @@ body > main > nav > .nav-footer {
 @media (max-width: 740px) {
   .detalle-libro > header {
     width: 100vw;
+    background-color: #111;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -653,6 +654,8 @@ body > main > nav > .nav-footer {
 @media (max-width: 740px) {
   .detalle-libro > header > div {
     height: 20vh;
+    width: 100vw;
+    background-color: #000;
   }
 }
 
@@ -668,11 +671,23 @@ body > main > nav > .nav-footer {
   font-size: 1.5em;
 }
 
+@media (max-width: 740px) {
+  .detalle-libro .content {
+    width: 100vw;
+  }
+}
+
 .detalle-libro .content .links {
   flex-direction: row;
   justify-content: space-between;
   padding: 1vw;
   display: flex;
+}
+
+@media (max-width: 740px) {
+  .detalle-libro .content .links {
+    padding: 3vw;
+  }
 }
 
 .detalle-libro .content .links .social-media > img {
@@ -684,6 +699,12 @@ body > main > nav > .nav-footer {
   transform: scale(1.05);
 }
 
+@media (max-width: 740px) {
+  .detalle-libro .content .links .social-media > img {
+    height: 6vh;
+  }
+}
+
 .detalle-libro .content .links > button {
   height: 4vh;
   border-radius: 5px;
@@ -693,11 +714,24 @@ body > main > nav > .nav-footer {
   display: flex;
 }
 
+@media (max-width: 740px) {
+  .detalle-libro .content .links > button {
+    height: 5vh;
+    width: 30vw;
+  }
+}
+
 .detalle-libro .content .info {
   flex-direction: column;
   gap: 10px;
   padding: 0 1vw 1vw;
   display: flex;
+}
+
+@media (max-width: 740px) {
+  .detalle-libro .content .info {
+    padding: 0 3vw 3vw;
+  }
 }
 
 .detalle-libro .volver-atras {
