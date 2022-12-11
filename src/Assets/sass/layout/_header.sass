@@ -8,6 +8,8 @@ body
         justify-content: space-between
         align-items: center
         padding: 1vh 1vw
+        @media (max-width: $breakpoint-mobile)
+            padding: 1vh 2.5vw
 
         > .logo
             display: flex
@@ -17,6 +19,9 @@ body
             > a
                 > img
                     width: 4vw
+                    @media (max-width: $breakpoint-mobile)
+                        width: 15vw
+                        
 
         > .avatar
             display: flex
@@ -25,6 +30,9 @@ body
             align-items: center
             > img
                 width: 4vw
+                @media (max-width: $breakpoint-mobile)
+                    width: 15vw
+
             
         
 

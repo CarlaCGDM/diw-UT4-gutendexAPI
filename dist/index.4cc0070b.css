@@ -15,6 +15,18 @@ a {
   display: grid;
 }
 
+@media (max-width: 740px) {
+  .body-default {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 380px) {
+  .body-default {
+    font-size: 1.1em;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -114,6 +126,12 @@ input[type="text"]:hover::placeholder, input[type="email"]:hover::placeholder, i
   color: #601005;
 }
 
+@media (max-width: 740px) {
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 80vw;
+  }
+}
+
 body > header {
   color: #f9f8f5;
   background-color: #000;
@@ -123,6 +141,12 @@ body > header {
   padding: 1vh 1vw;
   font-family: Nunito, sans-serif;
   display: flex;
+}
+
+@media (max-width: 740px) {
+  body > header {
+    padding: 1vh 2.5vw;
+  }
 }
 
 body > header > .logo {
@@ -136,6 +160,12 @@ body > header > .logo > a > img {
   width: 4vw;
 }
 
+@media (max-width: 740px) {
+  body > header > .logo > a > img {
+    width: 15vw;
+  }
+}
+
 body > header > .avatar {
   flex-direction: row;
   align-items: center;
@@ -145,6 +175,12 @@ body > header > .avatar {
 
 body > header > .avatar > img {
   width: 4vw;
+}
+
+@media (max-width: 740px) {
+  body > header > .avatar > img {
+    width: 15vw;
+  }
 }
 
 body footer {
@@ -158,6 +194,7 @@ body footer {
 }
 
 body > main > nav {
+  z-index: 100;
   color: #f9f8f5;
   height: 85vh;
   width: 20vw;
@@ -175,6 +212,15 @@ body > main > nav {
   overflow-x: hidden;
 }
 
+@media (max-width: 740px) {
+  body > main > nav {
+    width: 90vw;
+    padding: 10vh;
+    transition: all 1.5s;
+    right: -90vw;
+  }
+}
+
 body > main > nav > .menu {
   flex-direction: column;
   align-items: center;
@@ -186,8 +232,30 @@ body > main > nav > .menu > img {
   width: 8vw;
 }
 
-body > main > nav > .menu > a > .primary-button, body > main > nav > .menu > a > .secondary-button {
+@media (max-width: 740px) {
+  body > main > nav > .menu > img {
+    width: 30vw;
+  }
+}
+
+body > main > nav > .menu > a > .primary-button {
   width: 8.5vw;
+}
+
+@media (max-width: 740px) {
+  body > main > nav > .menu > a > .primary-button {
+    width: 35vw;
+  }
+}
+
+body > main > nav > .menu > a > .secondary-button {
+  width: 8.5vw;
+}
+
+@media (max-width: 740px) {
+  body > main > nav > .menu > a > .secondary-button {
+    width: 35vw;
+  }
 }
 
 body > main > nav > .nav-footer {
@@ -209,7 +277,7 @@ body > main > nav > .nav-footer {
 
 .grid-principal-default .resultados-default {
   color: #f9f8f5;
-  background-color: #060606;
+  background-color: #111;
   font-family: Nunito, sans-serif;
   overflow-y: hidden;
 }
@@ -241,7 +309,7 @@ body > main > nav > .nav-footer {
 .login {
   color: #f9f8f5;
   height: 85vh;
-  background-color: #060606;
+  background-color: #111;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -263,6 +331,14 @@ body > main > nav > .nav-footer {
   display: flex;
 }
 
+@media (max-width: 740px) {
+  .login .login-form {
+    width: 100vw;
+    height: 40vh;
+    border-radius: 0;
+  }
+}
+
 .login .login-form > fieldset {
   border: none;
   flex-direction: column;
@@ -279,7 +355,7 @@ body > main > nav > .nav-footer {
 .register {
   color: #f9f8f5;
   height: 85vh;
-  background-color: #060606;
+  background-color: #111;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -301,11 +377,29 @@ body > main > nav > .nav-footer {
   display: flex;
 }
 
+@media (max-width: 740px) {
+  .register .register-form {
+    width: 100vw;
+    height: 60vh;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .register .register-form {
+    height: 70vh;
+  }
+}
+
 .register .register-form > fieldset {
   border: none;
   flex-direction: column;
   gap: 5px;
   display: flex;
+}
+
+.register .register-form > fieldset > div {
+  text-align: center;
 }
 
 .register > h1 {
@@ -318,10 +412,22 @@ body > main > nav > .nav-footer {
   width: 4vw;
 }
 
+@media (max-width: 740px) {
+  .register > img {
+    width: 15vw;
+  }
+}
+
+@media (max-width: 380px) {
+  .register > img {
+    display: none;
+  }
+}
+
 .contact {
   color: #f9f8f5;
   height: 85vh;
-  background-color: #060606;
+  background-color: #111;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -356,6 +462,116 @@ body > main > nav > .nav-footer {
   font-family: Tiro Kannada, serif;
   font-size: 2em;
   transform: translateX(-8vw);
+}
+
+.perfil {
+  color: #f9f8f5;
+  height: 85vh;
+  background-color: #111;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.perfil .perfil-form {
+  color: #f9f8f5;
+  width: 50vw;
+  height: 60vh;
+  background-color: #000;
+  border-radius: 10px 10px 0 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Nunito, sans-serif;
+  display: flex;
+}
+
+.perfil .perfil-form > fieldset {
+  border: none;
+  flex-direction: column;
+  gap: 5px;
+  display: flex;
+}
+
+.perfil > h1 {
+  text-align: center;
+  font-family: Tiro Kannada, serif;
+  font-size: 2em;
+}
+
+.faved {
+  color: #f9f8f5;
+  height: 85vh;
+  background-color: #111;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.faved .faved-grid {
+  color: #f9f8f5;
+  width: 50vw;
+  height: 60vh;
+  background-color: #000;
+  border-radius: 10px 10px 0 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Nunito, sans-serif;
+  display: flex;
+}
+
+@media (max-width: 740px) {
+  .faved .faved-grid {
+    width: 100vw;
+    height: 60vh;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .faved .faved-grid {
+    height: 70vh;
+  }
+}
+
+.faved .faved-grid > fieldset {
+  border: none;
+  flex-direction: column;
+  gap: 5px;
+  display: flex;
+}
+
+.faved .faved-grid > fieldset > div {
+  text-align: center;
+}
+
+.faved > h1 {
+  text-align: center;
+  font-family: Tiro Kannada, serif;
+  font-size: 2em;
+}
+
+.faved > img {
+  width: 4vw;
+}
+
+@media (max-width: 740px) {
+  .faved > img {
+    width: 15vw;
+  }
+}
+
+@media (max-width: 380px) {
+  .faved > img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.4cc0070b.css.map */

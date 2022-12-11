@@ -1,6 +1,7 @@
 body
     > main
         > nav
+            z-index: 100
             background-color: $negro
             color: $blanco
             font-family: $fuente-principal
@@ -17,6 +18,12 @@ body
             opacity: 90%
             transition: 1s
 
+            @media (max-width: $breakpoint-mobile)
+                right: -90vw
+                width: 90vw
+                padding: 10vh
+                transition: 1.5s
+
             > .menu
                 display: flex
                 flex-direction: column
@@ -25,12 +32,18 @@ body
 
                 > img
                     width: 8vw
+                    @media (max-width: $breakpoint-mobile)
+                        width: 30vw
 
                 > a > .primary-button
                     width: 8.5vw
+                    @media (max-width: $breakpoint-mobile)
+                        width: 35vw
 
                 > a > .secondary-button
                     width: 8.5vw
+                    @media (max-width: $breakpoint-mobile)
+                        width: 35vw
 
             > .nav-footer
                 display: flex

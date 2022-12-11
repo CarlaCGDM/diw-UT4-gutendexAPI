@@ -8,12 +8,34 @@
 
 function toggleNavbar() {
     let nav = document.querySelector("nav");
-    if (nav.style.right == '0vw') {
-        nav.style.right = '-20vw';
-        nav.style.opacity = '90%';
+
+    //if its desktop version
+
+    
+    if (window.innerWidth > 740 ) {
+    
+        if (nav.style.right == '0vw') {
+            nav.style.right = '-20vw';
+            nav.style.opacity = '90%';
+        } else {
+            nav.style.right = '0vw';
+            
+            nav.style.opacity = '100%';
+        }
+    
     } else {
-        nav.style.right = '0vw';
-        
-        nav.style.opacity = '100%';
+        //if its mobile version
+        if (nav.style.right == '0vw') {
+            nav.style.right = '-90vw';
+            nav.style.opacity = '90%';
+        } else {
+            nav.style.right = '0vw';
+            
+            nav.style.opacity = '100%';
+        }
     }
+
+    
+
+    
 }
