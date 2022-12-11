@@ -18,7 +18,7 @@
             <small>Powered by </br><a href="https://gutendex.com/">Gutendex</a></small>
         </section>
         <section class="avatar">
-            <small>@_usurio</small>
+            <small>@_usuario</small>
             <img src="Assets/images/sample_user_pictures/profile-picture.png" onclick="toggleNavbar()">
         </section>
     </header>
@@ -44,32 +44,42 @@
         <!--navigation end-->
 
         <!-- nombre y foto de perfil -->
-        <section>
-            <img src="Assets/images/sample_user_pictures/no-profile-picture.svg" alt="Foto de perfil" />
+        <section class="seccion-foto">
+            <img src="Assets/images/sample_user_pictures/profile-picture.png" alt="Foto de perfil" />
             <div>
-                <p><strong>Username</strong></p>
+                <p><strong>username</strong></p>
                 <p>email@ejemplo.com</p>
             </div>
         </section>
         <!-- nombre y foto de perfil end -->
 
         <!-- informacion -->
-        <section>
+        <section class="seccion-info">
             <h1>Información de usuario</h1>
             <form class="perfil-form">
-                <div>
+                <fieldset>
                     <label for="username">Nombre de usuario:</label>
-                    <input type="text" name="username" placeholder="usuario" required />
+                    <input type="text" name="username" placeholder="nombre de usuario" required />
                     <label for="name">Nombre:</label>
-                    <input type="text" name="name" placeholder="John" />
+                    <input type="text" name="name" placeholder="nombre" />
                     <label for="surname">Apellidos:</label>
-                    <input type="text" name="surname" placeholder="Smith" />
+                    <input type="text" name="surname" placeholder="apellido" />
                     <label for="birthday">Fecha de nacimiento:</label>
                     <input type="date" name="birthday" required />
                     <label for="email">Correo electrónico:</label>
-                    <input type="email" name="email" placeholder="email@ejemplo.com" required />
-                </div>
-                <button type="submit">Guardar cambios</button>
+                    <input type="email" name="email" placeholder="correo electrónico" required />
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <input type="checkbox" name="newsletter" value="newsletter" checked />
+                        <label for="subscribeNews"><small>Quiero recibir noticias y recomendaciones personalizadas.</small></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="darkmode" value="darkmode" checked/>
+                        <label for="darkmode"><small>Prefiero usar el tema oscuro.</small></label>
+                    </div>
+                </fieldset>
+                <button type="submit" class="primary-button minor-action-button"><span>Guardar cambios</span></button>
             </form>
         </section>
         <!-- informacion end -->
