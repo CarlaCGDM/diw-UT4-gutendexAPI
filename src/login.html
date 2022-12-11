@@ -8,13 +8,14 @@
     <title>Login</title>
     <link rel="stylesheet" href="Assets/sass/main.sass">
     <script src="Assets/js/animations.js"></script>
+    <script src="Assets/js/successful_login.js"></script>
 </head>
 
-<body>
+<body class="body-default">
     <!--header-->
     <header>
         <section class="logo">
-            <a href="index.html"><img src="Assets/images/logo.svg"></a>
+            <a href="index.html"><img src="Assets/images/logo.svg" role="button" /></a>
             <small>Powered by </br><a href="https://gutendex.com/">Gutendex</a></small>
         </section>
         <section class="avatar">
@@ -32,10 +33,10 @@
             <section class="menu">
                 <img src="Assets/images/sample_user_pictures/no-profile-picture.svg" />
                 <small>@_invitado</small>
-                <a href="login.html"><button class="primary-button">Login</button></a>
-                <a href="registro.html"><button class="secondary-button">Registro</button></a>
+                <a href="login.html"><button class="primary-button" id="login-button">Login</button></a>
+                <a href="registro.html"><button class="secondary-button" id="register-button">Registro</button></a>
             </section>
-            <section class="contact">
+            <section class="nav-footer">
                 <a href="contacto.html"><small>Contacto</small></a>
                 <img src="Assets/images/icons/write.svg" />
             </section>
@@ -45,7 +46,7 @@
         <!-- formulario de registro -->
         <section class="login">
             <h1>Login</h1>
-            <form class="login-form">
+            <form class="login-form" action="favoritos.html">
                 <fieldset>
                     <label for="email"><small>Correo electrónico:</small></label>
                     <input type="email" name="email" placeholder="email@ejemplo.com" required />
@@ -56,7 +57,7 @@
                     <input type="checkbox" name="staylogged" value="staylogged" checked />
                     <label for="staylogged"><small>Mantener la sesión iniciada.</small></label>
                 </div>
-                <button type="submit" class="primary-button">Entrar</button>
+                <button type="submit" class="primary-button expand"><span>Entrar</span></button>
             </form>
         </section>
         <!-- formulario de registro end -->

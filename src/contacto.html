@@ -10,11 +10,11 @@
     <script src="Assets/js/animations.js"></script>
 </head>
 
-<body>
+<body class="body-default">
     <!--header-->
     <header>
         <section class="logo">
-            <a href="index.html"><img src="Assets/images/logo.svg"></a>
+            <a href="index.html"><img src="Assets/images/logo.svg" role="button" /></a>
             <small>Powered by </br><a href="https://gutendex.com/">Gutendex</a></small>
         </section>
         <section class="avatar">
@@ -35,7 +35,7 @@
                 <a href="login.html"><button class="primary-button">Login</button></a>
                 <a href="registro.html"><button class="secondary-button">Registro</button></a>
             </section>
-            <section class="contact">
+            <section class="nav-footer">
                 <a href="contacto.html"><small>Contacto</small></a>
                 <img src="Assets/images/icons/write.svg" />
             </section>
@@ -43,19 +43,20 @@
         <!--navigation end-->
 
         <!-- formulario de contacto -->
-        <section>
+        <section class="contact">
             <h1>Contacto</h1>
-            <form>
-                <div>
+            <form class="contact-form">
+                <fieldset>
                     <label for="email">Correo electrónico:</label>
                     <input type="email" name="email" placeholder="email@ejemplo.com" required />
                     <label for="subject">Asunto:</label>
                     <input type="text" name="subject" placeholder="Sugerencia respecto a..." required />
                     <label for="content">Mensaje:</label>
-                    <textarea name="content" rows="20" cols="80" placeholder="..." required></textarea>
-                </div>
-                <button type="submit">Confirmar</button>
+                    <textarea name="content" rows="15" cols="80" placeholder="..." required></textarea>
+                </fieldset>
+                <button type="submit" class="primary-button">Confirmar</button>
             </form>
+            
         </section>
         <!-- formulario de contacto end -->
 

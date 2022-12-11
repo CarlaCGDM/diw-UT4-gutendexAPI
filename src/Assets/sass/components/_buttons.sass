@@ -3,6 +3,7 @@
     color: $blanco
     font-size: 1em
     font-weight: lighter
+    text-align: center
     padding: 10px 15px
     border-radius: 10px
     &:hover
@@ -14,8 +15,34 @@
     color: $blanco
     font-size: 1em
     font-weight: 500
+    text-align: center
     padding: 10px 15px
     border-radius: 10px
     &:hover
         cursor: pointer
         transform: scale(1.02)
+
+.expand
+    font-size: 1.2em
+    transition: all 0.5s
+    
+    > span
+        display: inline-block
+        position: relative
+        transition: 0.5s
+
+        &::after
+            content: '\00bb'
+            position: absolute
+            opacity: 0
+            top: 0
+            right: -20px
+            transition: 0.5s
+
+    &:hover
+        > span
+            padding-right: 20px
+            &::after
+                opacity: 1
+                right: 0
+            

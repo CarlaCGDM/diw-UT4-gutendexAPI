@@ -8,14 +8,15 @@
     <title>Registro</title>
     <link rel="stylesheet" href="/index.4cc0070b.css">
     <script src="/index.3ce30202.js"></script>
+    <script src="/login.23edb76c.js"></script>
 </head>
 
-<body>
+<body class="body-default">
 
     <!--header-->
     <header>
         <section class="logo">
-            <a href="/index.html"><img src="/logo.a7a94c97.svg"></a>
+            <a href="/index.html"><img src="/logo.a7a94c97.svg" role="button"></a>
             <small>Powered by <br><a href="https://gutendex.com/">Gutendex</a></small>
         </section>
         <section class="avatar">
@@ -33,11 +34,10 @@
             <section class="menu">
                 <img src="/no-profile-picture.ff29c5dc.svg">
                 <small>@_invitado</small>
-                <a href="/login.html"><button class="primary-button">Login</button></a>
-                <a href="/registro.html"><button class="secondary-button">Registro</button></a>
+                <a href="/login.html"><button class="primary-button" id="login-button">Login</button></a>
+                <a href="/registro.html"><button class="secondary-button" id="register-button">Registro</button></a>
             </section>
-            <!--el menu cambia cuando el usuario se logea-->
-            <section class="contact">
+            <section class="nav-footer">
                 <a href="/contacto.html"><small>Contacto</small></a>
                 <img src="/write.c4b86647.svg">
             </section>
@@ -45,32 +45,32 @@
         <!--navigation end-->
 
         <!-- formulario de registro -->
-        <section>
+        <section class="register">
             <h1>Registro</h1>
-            <img alt="Icono de libro abierto">
-            <form>
-                <div>
-                    <label for="username">Nombre de usuario:</label>
-                    <input type="text" name="username" placeholder="usuario" required="">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" name="email" placeholder="email@ejemplo.com" required="">
-                    <label for="password1">Contraseña:</label>
-                    <input type="password" name="password1" placeholder="99a3C!W7@#82" required="">
-                    <label for="password2">Repetir contraseña:</label>
-                    <input type="password" name="password2" placeholder="a3C!W7@#82" required="">
-                </div>
-                <div>
+            <img src="/book.4280b480.svg" alt="Icono de libro abierto">
+            <form class="register-form" action="favoritos.html">
+                <fieldset>
+                    <label for="username"><small>Nombre de usuario:</small></label>
+                    <input type="text" name="username" placeholder="nombre de usuario" required="">
+                    <label for="email"><small>Correo electrónico:</small></label>
+                    <input type="email" name="email" placeholder="correo electrónico" required="">
+                    <label for="password1"><small>Contraseña:</small></label>
+                    <input type="password" name="password1" placeholder="contraseña" required="">
+                    <label for="password2"><small>Repetir contraseña:</small></label>
+                    <input type="password" name="password2" placeholder="contraseña" required="">
+                </fieldset>
+                <fieldset>
                     <div>
-                        <input type="checkbox" name="condiciones" value="condiciones" checked="" required="">
-                        <label for="subscribeNews">He leído y acepto los <a href="https://www.lipsum.com/">términos y
-                                condiciones</a>.</label>
+                        <input type="checkbox" name="condiciones" value="condiciones" checked="" required="" disabled="">
+                        <label for="subscribeNews"><small>He leído y acepto los <a href="https://www.lipsum.com/">términos y
+                                condiciones</a>.</small></label>
                     </div>
                     <div>
                         <input type="checkbox" name="newsletter" value="newsletter" checked="">
-                        <label for="subscribeNews">Quiero recibir noticias y recomendaciones personalizadas.</label>
+                        <label for="subscribeNews"><small>Quiero recibir noticias y recomendaciones personalizadas.</small></label>
                     </div>
-                </div>
-                <button type="submit">Confirmar</button>
+                </fieldset>
+                <button type="submit" class="primary-button expand"><span>Confirmar </span></button>
             </form>
         </section>
         <!-- formulario de registro end -->

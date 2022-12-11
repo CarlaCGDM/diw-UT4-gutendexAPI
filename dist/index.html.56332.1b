@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book API</title>
-  <link rel="stylesheet" href="Assets/sass/main.sass">
-  <script src="Assets/js/animations.js"></script>
+  <link rel="stylesheet" href="/index.4cc0070b.css">
+  <script src="/index.3ce30202.js"></script>
 </head>
 
 <body class="body-default">
@@ -15,12 +15,12 @@
   <!--header-->
   <header>
     <section class="logo">
-      <a href="index.html"><img src="Assets/images/logo.svg" role="button" /></a>
-      <small>Powered by </br><a href="https://gutendex.com/">Gutendex</a></small>
+      <a><img src="/logo.a7a94c97.svg"></a>
+      <small>Powered by <br><a href="https://gutendex.com/">Gutendex</a></small>
     </section>
     <section class="avatar">
       <small>@_invitado</small>
-      <img src="Assets/images/sample_user_pictures/no-profile-picture.svg" onclick="toggleNavbar()">
+      <img src="/no-profile-picture.ff29c5dc.svg" onclick="toggleNavbar()">
     </section>
   </header>
   <!--header end-->
@@ -30,17 +30,17 @@
     <!--navigation-->
     <nav>
       <section class="menu">
-          <img src="Assets/images/sample_user_pictures/no-profile-picture.svg" />
-          <small>@_invitado</small>
-          <a href="login.html"><button class="primary-button" id="login-button">Login</button></a>
-          <a href="registro.html"><button class="secondary-button" id="register-button">Registro</button></a>
+        <img src="/no-profile-picture.ff29c5dc.svg">
+        <small>@_invitado</small>
+        <a href="/login.html"><button class="primary-button">Login</button></a>
+        <a href="/registro.html"><button class="secondary-button">Registro</button></a>
       </section>
       <section class="nav-footer">
-          <a href="contacto.html"><small>Contacto</small></a>
-          <img src="Assets/images/icons/write.svg" />
+        <a href="/contacto.html"><small>Contacto</small></a>
+        <img src="/write.c4b86647.svg">
       </section>
-  </nav>
-  <!--navigation end-->
+    </nav>
+    <!--navigation end-->
 
     <section class="busqueda-default" id="seccion-busqueda">
       <!-- SECCIÓN BÚSQUEDA-->
@@ -113,77 +113,77 @@
       <!--LIBROS-->
       <div class="grid-resultados-default">
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
           </figcaption>
         </figure>
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
           </figcaption>
         </figure>
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
           </figcaption>
         </figure>
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
           </figcaption>
         </figure>
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
           </figcaption>
         </figure>
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
           </figcaption>
         </figure>
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
           </figcaption>
         </figure>
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
           </figcaption>
         </figure>
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
           </figcaption>
         </figure>
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
           </figcaption>
         </figure>
         <figure class="portada">
-          <img src="Assets/images/defaultLibro.jpg">
+          <img src="/defaultLibro.018a698c.jpg">
           <figcaption>
             <small>J. Sheridan LeFanu</small>
             <p><strong>Carmilla</strong></p>
@@ -195,6 +195,6 @@
   <footer>
     <small><a href="https://www.gutenberg.org/">© gutenberg.org</a></small>
   </footer>
-</body>
+<script src="/diw-UT4-gutendexAPI.59712999.js"></script></body>
 
 </html>
