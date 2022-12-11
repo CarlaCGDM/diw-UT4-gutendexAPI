@@ -421,9 +421,9 @@ body > main > nav > .nav-footer {
 }
 
 .grid-principal .busqueda > header {
-  justify-content: flex-end;
-  align-items: left;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   gap: 10px;
   padding: 2.5vw;
   display: flex;
@@ -931,10 +931,10 @@ body > main > nav > .nav-footer {
 }
 
 .perfil .seccion-info {
-  justify-content: flex-end;
-  align-items: right;
   width: 75vw;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
   gap: 10px;
   display: flex;
 }
