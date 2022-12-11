@@ -48,11 +48,11 @@ function showDetail() {
     if (window.innerWidth < 740) {
         //de ser asi, coge la seccion de resultados
         //y la hace visible
-        let detalle = document.getElementById("detalle-movil");
+        let detalle = document.querySelector(".detalle-libro");
         detalle.style.display = "block";
     } else {
         let overlay = document.querySelector(".black-overlay");
-        let detalle1 = document.getElementById("detalle-desktop");
+        let detalle1 = document.querySelector(".detalle-libro");
         detalle1.style.display = "block";
         overlay.style.display = "block";
     }
@@ -62,13 +62,15 @@ function hideDetail() {
     if (window.innerWidth < 740) {
         //de ser asi, coge la seccion de resultados
         //y la hace visible
-        let detalle = document.getElementById("detalle-movil");
-        detalle.style.display = "none";
-    } else {
+        let detalle = document.querySelector(".detalle-libro");
         let overlay = document.querySelector(".black-overlay");
-        let detalle1 = document.getElementById("detalle-desktop");
-        detalle1.style.display = "none";
+        detalle.style.display = "none";
         overlay.style.display = "none";
+    } else {
+        console.log("hola");
+        let overlay1 = document.querySelector(".black-overlay");
+        let detalle1 = document.querySelector(".detalle-libro");
+        detalle1.style.display = "none";
     }
 }
 

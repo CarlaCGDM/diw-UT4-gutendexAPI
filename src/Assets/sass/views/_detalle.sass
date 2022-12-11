@@ -1,20 +1,22 @@
 .detalle-libro
+    display: none
     z-index: 50
     width: 40vw
     min-width: 500px
-    height: 70vh
+    height: 80vh
     border-radius: 10px
     position: fixed
     overflow-y: scroll
     left: 50%
-    top: 50%
+    top: 52%
     transform: translate(-50%, -50%)
     color: $blanco
     font-family: $fuente-principal
     background-color: $negro
+    @media (max-width: $breakpoint-mobile)
         width: 100vw
         height: 100vh
-        top: 0
+        top: 9.5vh
         left: 0
         transform: none
         border-radius: 0px
@@ -23,20 +25,33 @@
         display: none
     -ms-overflow-style: none
     scrollbar-width: none
+
     > header
         background-color: $gris-claro
         font-family: $fuente-secundaria
         display: flex
         flex-direction: row
         justify-content: space-between
+        @media (max-width: $breakpoint-mobile)
+            width: 100vw
+            flex-direction: column
+            align-items: center
+            gap: 20px
+            justify-content: space-around
+            padding-bottom: 3vh
         > img
             width: 25%
+            @media (max-width: $breakpoint-mobile)
+                width: 80vw
+                border-radius: 5px
         > div
             display: flex
             flex-direction: column
             align-items: center
             justify-content: center
             width: 70%
+            @media (max-width: $breakpoint-mobile)
+                height: 20vh
             > h2
                 font-size: 2.5em
                 text-align: center
@@ -74,11 +89,27 @@
             flex-direction: column
             gap: 10px
             padding: 0vw 1vw 1vw 1vw
+
+    .volver-atras
+        display: none
+        @media (max-width: $breakpoint-mobile)
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            align-items: center
+            padding: 2vh
+            background-color: $rojo-oscuro
+            height: 7.5vh
+            width: 100vw
+            gap: 10px
+            > small
+                text-align: center
             
 
 .black-overlay
+    display: none
     background-color: $negro
     position: fixed
     height: 100vh
     width: 100vw
-    opacity: 20%
+    opacity: 50%

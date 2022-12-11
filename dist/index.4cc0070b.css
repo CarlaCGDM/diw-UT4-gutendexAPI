@@ -582,24 +582,30 @@ body > main > nav > .nav-footer {
   z-index: 50;
   width: 40vw;
   min-width: 500px;
-  height: 70vh;
+  height: 80vh;
   color: #f9f8f5;
-  background-color-width: 100vw;
-  background-color-height: 100vh;
-  background-color-top: 0;
-  background-color-left: 0;
-  background-color-transform: none;
-  background-color-border-radius: 0px;
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #000;
   border-radius: 10px;
   font-family: Nunito, sans-serif;
+  display: none;
   position: fixed;
-  top: 50%;
+  top: 52%;
   left: 50%;
   overflow-y: scroll;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 740px) {
+  .detalle-libro {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    top: 9.5vh;
+    left: 0;
+    transform: none;
+  }
 }
 
 .detalle-libro::-webkit-scrollbar {
@@ -614,8 +620,26 @@ body > main > nav > .nav-footer {
   display: flex;
 }
 
+@media (max-width: 740px) {
+  .detalle-libro > header {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 3vh;
+  }
+}
+
 .detalle-libro > header > img {
   width: 25%;
+}
+
+@media (max-width: 740px) {
+  .detalle-libro > header > img {
+    width: 80vw;
+    border-radius: 5px;
+  }
 }
 
 .detalle-libro > header > div {
@@ -624,6 +648,12 @@ body > main > nav > .nav-footer {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+@media (max-width: 740px) {
+  .detalle-libro > header > div {
+    height: 20vh;
+  }
 }
 
 .detalle-libro > header > div > h2 {
@@ -670,11 +700,34 @@ body > main > nav > .nav-footer {
   display: flex;
 }
 
+.detalle-libro .volver-atras {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  .detalle-libro .volver-atras {
+    height: 7.5vh;
+    width: 100vw;
+    background-color: #601005;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 2vh;
+    display: flex;
+  }
+
+  .detalle-libro .volver-atras > small {
+    text-align: center;
+  }
+}
+
 .black-overlay {
   height: 100vh;
   width: 100vw;
-  opacity: .2;
+  opacity: .5;
   background-color: #000;
+  display: none;
   position: fixed;
 }
 
