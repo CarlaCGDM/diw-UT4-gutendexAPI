@@ -1,0 +1,26 @@
+@keyframes name
+  0%
+    transform: scale(1)
+    opacity: 100%
+  50%
+    transform: scale(1.1)
+  100%
+    transform: scale(1)
+    opacity: 100%
+    
+.not-found
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $gris-oscuro
+    > h1 
+        font-size: 20em
+        color: $gris-claro
+        &:hover
+            animation: name 2s linear infinite
+        @media (max-width: $breakpoint-mobile)
+            font-size: 10em
+        
+    > p 
+        color: $blanco

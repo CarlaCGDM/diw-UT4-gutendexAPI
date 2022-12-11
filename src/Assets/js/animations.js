@@ -100,6 +100,7 @@ function hideDetail() {
         let overlay = document.querySelector(".black-overlay");
         let detalle = document.querySelector(".detalle-libro");
         detalle.style.display = "none";
+        overlay.style.display = "none";
     }
 
 }

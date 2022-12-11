@@ -71,6 +71,7 @@ function hideDetail() {
         let overlay1 = document.querySelector(".black-overlay");
         let detalle1 = document.querySelector(".detalle-libro");
         detalle1.style.display = "none";
+        overlay1.style.display = "none";
     }
 }
 
