@@ -41,5 +41,35 @@ function hideResults() {
         results.style.display = "none";
     }
 }
+//muestra la vista de detalle de movil o de desktop
+//al hacer clic en un libro que queramos ver en mas detalle
+function showDetail() {
+    //comprueba si estamos en mobile
+    if (window.innerWidth < 740) {
+        //de ser asi, coge la seccion de resultados
+        //y la hace visible
+        let detalle = document.getElementById("detalle-movil");
+        detalle.style.display = "block";
+    } else {
+        let overlay = document.querySelector(".black-overlay");
+        let detalle1 = document.getElementById("detalle-desktop");
+        detalle1.style.display = "block";
+        overlay.style.display = "block";
+    }
+}
+function hideDetail() {
+    //comprueba si estamos en mobile
+    if (window.innerWidth < 740) {
+        //de ser asi, coge la seccion de resultados
+        //y la hace visible
+        let detalle = document.getElementById("detalle-movil");
+        detalle.style.display = "none";
+    } else {
+        let overlay = document.querySelector(".black-overlay");
+        let detalle1 = document.getElementById("detalle-desktop");
+        detalle1.style.display = "none";
+        overlay.style.display = "none";
+    }
+}
 
 //# sourceMappingURL=index.3ce30202.js.map

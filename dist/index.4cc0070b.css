@@ -578,6 +578,106 @@ body > main > nav > .nav-footer {
   font-size: 2em;
 }
 
+.detalle-libro {
+  z-index: 50;
+  width: 40vw;
+  min-width: 500px;
+  height: 70vh;
+  color: #f9f8f5;
+  background-color-width: 100vw;
+  background-color-height: 100vh;
+  background-color-top: 0;
+  background-color-left: 0;
+  background-color-transform: none;
+  background-color-border-radius: 0px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #000;
+  border-radius: 10px;
+  font-family: Nunito, sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  overflow-y: scroll;
+  transform: translate(-50%, -50%);
+}
+
+.detalle-libro::-webkit-scrollbar {
+  display: none;
+}
+
+.detalle-libro > header {
+  background-color: #1f1f1f;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Tiro Kannada, serif;
+  display: flex;
+}
+
+.detalle-libro > header > img {
+  width: 25%;
+}
+
+.detalle-libro > header > div {
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.detalle-libro > header > div > h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 2.5em;
+}
+
+.detalle-libro > header > div > h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.detalle-libro .content .links {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1vw;
+  display: flex;
+}
+
+.detalle-libro .content .links .social-media > img {
+  transition: all .2s;
+}
+
+.detalle-libro .content .links .social-media > img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.detalle-libro .content .links > button {
+  height: 4vh;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  display: flex;
+}
+
+.detalle-libro .content .info {
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 1vw 1vw;
+  display: flex;
+}
+
+.black-overlay {
+  height: 100vh;
+  width: 100vw;
+  opacity: .2;
+  background-color: #000;
+  position: fixed;
+}
+
 .register {
   color: #f9f8f5;
   height: 85vh;
@@ -806,7 +906,6 @@ body > main > nav > .nav-footer {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  gap: 20px;
   display: flex;
 }
 

@@ -1,0 +1,84 @@
+.detalle-libro
+    z-index: 50
+    width: 40vw
+    min-width: 500px
+    height: 70vh
+    border-radius: 10px
+    position: fixed
+    overflow-y: scroll
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    color: $blanco
+    font-family: $fuente-principal
+    background-color: $negro
+        width: 100vw
+        height: 100vh
+        top: 0
+        left: 0
+        transform: none
+        border-radius: 0px
+
+    &::-webkit-scrollbar
+        display: none
+    -ms-overflow-style: none
+    scrollbar-width: none
+    > header
+        background-color: $gris-claro
+        font-family: $fuente-secundaria
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        > img
+            width: 25%
+        > div
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            width: 70%
+            > h2
+                font-size: 2.5em
+                text-align: center
+                width: 100%
+            > h3
+                width: 100%
+                text-align: center
+                font-size: 1.5em
+        
+    .content
+        
+        .links
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            padding: 1vw
+
+            .social-media
+                >img
+                    transition: 0.2s
+                    &:hover
+                        transform: scale(1.05)
+                        cursor: pointer
+
+            > button
+                height: 4vh
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 1em
+                border-radius: 5px
+
+        .info
+            display: flex
+            flex-direction: column
+            gap: 10px
+            padding: 0vw 1vw 1vw 1vw
+            
+
+.black-overlay
+    background-color: $negro
+    position: fixed
+    height: 100vh
+    width: 100vw
+    opacity: 20%
