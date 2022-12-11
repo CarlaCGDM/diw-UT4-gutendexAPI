@@ -1,4 +1,6 @@
-/* DETECTAR EL CAMBIO DE TAMAÑO DE LA PANTALLA PARA VOLVER A LA VISTA DEFAULT*/ /*EXPANDIR MENU BUSQUEDA MOVIL*/ /*COLAPSAR MENU BUSQUEDA MOVIL*/ /*--Mostrar/ocultar menú lateral de navegación--*/ function toggleNavbar() {
+//funcion que muestra u oculta el menu de navegacion lateral
+//se llama al pulsar en el avatar del header
+function toggleNavbar() {
     let nav = document.querySelector("nav");
     //if its desktop version
     if (window.innerWidth > 740) {

@@ -153,6 +153,22 @@ input[type="text"]:hover::placeholder, input[type="email"]:hover::placeholder, i
   }
 }
 
+textarea {
+  height: 30vh;
+  width: 40vw;
+  font-size: 1em;
+}
+
+textarea:hover::placeholder {
+  color: #601005;
+}
+
+@media (max-width: 740px) {
+  textarea {
+    width: 80vw;
+  }
+}
+
 select {
   height: 3vh;
   width: 22vw;
@@ -651,7 +667,20 @@ body > main > nav > .nav-footer {
   gap: 10px;
   font-family: Nunito, sans-serif;
   display: flex;
-  transform: translateX(-8vw);
+}
+
+@media (max-width: 740px) {
+  .contact .contact-form {
+    width: 100vw;
+    height: 60vh;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact .contact-form {
+    height: 70vh;
+  }
 }
 
 .contact .contact-form > fieldset {
@@ -665,7 +694,6 @@ body > main > nav > .nav-footer {
   text-align: center;
   font-family: Tiro Kannada, serif;
   font-size: 2em;
-  transform: translateX(-8vw);
 }
 
 .perfil {
