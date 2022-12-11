@@ -25,93 +25,115 @@
   </header>
   <!--header end-->
 
-  <main class="grid-principal-default">
+  <main class="grid-principal">
 
     <!--navigation-->
     <nav>
       <section class="menu">
-          <img src="Assets/images/sample_user_pictures/no-profile-picture.svg" />
-          <small>@_invitado</small>
-          <a href="login.html"><button class="primary-button" id="login-button">Login</button></a>
-          <a href="registro.html"><button class="secondary-button" id="register-button">Registro</button></a>
+        <img src="Assets/images/sample_user_pictures/no-profile-picture.svg" />
+        <small>@_invitado</small>
+        <a href="login.html"><button class="primary-button" id="login-button">Login</button></a>
+        <a href="registro.html"><button class="secondary-button" id="register-button">Registro</button></a>
       </section>
       <section class="nav-footer">
-          <a href="contacto.html"><small>Contacto</small></a>
-          <img src="Assets/images/icons/write.svg" />
+        <a href="contacto.html"><small>Contacto</small></a>
+        <img src="Assets/images/icons/write.svg" />
       </section>
-  </nav>
-  <!--navigation end-->
+    </nav>
+    <!--navigation end-->
 
-    <section class="busqueda-default" id="seccion-busqueda">
+    <section class="busqueda">
       <!-- SECCIÓN BÚSQUEDA-->
-      <!--Textos-->
+
       <header>
         <h1>La literatura clásica, a tu alcance.</h1>
         <p>Bucea en el catálogo de Project Gutenberg, un inmenso repositorio de obras literarias pertenecientes al
           dominio público.</p>
       </header>
-      <!--Formulario-->
-      <form class="filtros-default" id="filtros">
-        <!--Botón de desplegar-->
-        <button type="submit" id="boton-desplegar">Buscar</button>
+
+      <form class="formulario-busqueda">
         <!--Barra de búsqueda-->
-        <input type="text">
+        <div class="searchbar">
+          <button type="submit" class="searchbar-button"><img src="Assets/images/icons/lupa.svg" /></button>
+          <input type="search" placeholder="Búsqueda..."></input>
+        </div>
         <!--Sección filtros-->
-        <div id="filtros-dropdown">
-          <label for="filtro-1">Filtro 1:</label>
-          <select name="filtro-1">
-            <option value="Opcion1">Opcion1</option>
-            <option value="Opcion2">Opcion2</option>
-            <option value="Opcion3">Opcion3</option>
-            <option value="Opcion4">Opcion4</option>
-          </select>
-          <label for="filtro-2">Filtro 2:</label>
-          <select name="filtro-2">
-            <option value="Opcion1">Opcion1</option>
-            <option value="Opcion2">Opcion2</option>
-            <option value="Opcion3">Opcion3</option>
-            <option value="Opcion4">Opcion4</option>
-          </select>
-          <label for="filtro-3">Filtro 3:</label>
-          <select name="filtro-3">
-            <option value="Opcion1">Opcion1</option>
-            <option value="Opcion2">Opcion2</option>
-            <option value="Opcion3">Opcion3</option>
-            <option value="Opcion4">Opcion4</option>
-          </select>
-          <label for="filtro-4">Filtro 4:</label>
-          <select name="filtro-4">
-            <option value="Opcion1">Opcion1</option>
-            <option value="Opcion2">Opcion2</option>
-            <option value="Opcion3">Opcion3</option>
-            <option value="Opcion4">Opcion4</option>
-          </select>
-          <label for="filtro-5">Filtro 5:</label>
-          <select name="filtro-5">
-            <option value="Opcion1">Opcion1</option>
-            <option value="Opcion2">Opcion2</option>
-            <option value="Opcion3">Opcion3</option>
-            <option value="Opcion4">Opcion4</option>
-          </select>
+        <div class="filtros">
+          <fieldset>
+            <div class="select">
+            <label for="filtro-1"><small>Género:</small></label>
+            <select name="filtro-1">
+              <option value="Opcion1">Acción</option>
+              <option value="Opcion2">Aventuras</option>
+              <option value="Opcion3">Romance</option>
+              <option value="Opcion4">Ciencia ficción</option>
+            </select>
+          </div>
+          <div class="select">
+            <label for="filtro-1"><small>Filtro 4:</small></label>
+            <select name="filtro-1">
+              <option value="Opcion1">Opcion1</option>
+              <option value="Opcion2">Opcion2</option>
+              <option value="Opcion3">Opcion3</option>
+              <option value="Opcion4">Opcion4</option>
+            </select>
+          </div>
+          <div class="select">
+            <label for="filtro-1"><small>Época:</small></label>
+            <select name="filtro-1">
+              <option value="Opcion1">Antiguedad</option>
+              <option value="Opcion2">Edad media</option>
+              <option value="Opcion3">Renacimiento</option>
+              <option value="Opcion3">Ilustración</option>
+              <option value="Opcion4">Modernidad</option>
+            </select>
+          </div>
+          <div class="select">
+            <label for="filtro-1"><small>Idioma:</small></label>
+            <select name="filtro-1">
+              <option value="Opcion1">Inglés</option>
+              <option value="Opcion2">Español</option>
+              <option value="Opcion3">Francés</option>
+              <option value="Opcion4">Chino</option>
+              <option value="Opcion4">Ruso</option>
+              <option value="Opcion4">Alemán</option>
+            </select>
+          </div>
+          </fieldset>
+          <div>
+            <fieldset>
+              <!--Filtros de checkbox-->
+              <div>
+                <input type="checkbox" name="newsletter" value="newsletter" checked />
+                <label for="subscribeNews"><small>Sólo los más descargados.</small></label>
+              </div>
+              <div>
+                <input type="checkbox" name="newsletter" value="newsletter"  />
+                <label for="subscribeNews"><small>Sólo los menos vistos.</small></label>
+              </div>
+              <div>
+                <input type="checkbox" name="newsletter" value="newsletter"  />
+                <label for="subscribeNews"><small>Sólo autoras femeninas.</small></label>
+              </div>
+              <div>
+                <input type="checkbox" name="newsletter" value="newsletter"  />
+                <label for="subscribeNews"><small>Sólo autores LGTB.</small></label>
+              </div>
+            </fieldset>
+            <button type="button" class="primary-button expand" onclick="showResults()"><span>Buscar</span></button>
+          </div>
         </div>
-        <div id="filtros-checkbox">
-          <!--Filtros de checkbox-->
-          <label><input type="checkbox" value="check1">Checkbox 1</label><br>
-          <label><input type="checkbox" value="check2">Checkbox 2</label><br>
-          <label><input type="checkbox" value="check3">Checkbox 3</label><br>
-          <label><input type="checkbox" value="check4">Checkbox 4</label><br>
-        </div>
-        <!--Botón de búsqueda-->
-        <button type="submit" id="boton-busqueda">Buscar</button>
+
       </form>
     </section>
-    <section class="resultados-default" id="sección-resultados">
+    <section class="resultados" id="sección-resultados">
       <!-- SECCIÓN RESULTADOS -->
       <header>
+        <img role="button" src="Assets/images/icons/backarrow.png" onclick="hideResults()"/>
         <small>Aquí tenemos 7.352 resultados para la búsqueda “clásicos”. ¿Te animas con otra?</small>
       </header>
       <!--LIBROS-->
-      <div class="grid-resultados-default">
+      <div class="grid-resultados">
         <figure class="portada">
           <img src="Assets/images/defaultLibro.jpg">
           <figcaption>
@@ -197,9 +219,11 @@
   </footer>
 </body>
 
+<!-- parcel no carga las páginas si no las incluyo de algún modo en el index.html... -->
 <div class="links">
   <a href="perfil.html"></a>
   <a href="favoritos.html"></a>
   <a href="404.html"></a>
 </div>
+
 </html>

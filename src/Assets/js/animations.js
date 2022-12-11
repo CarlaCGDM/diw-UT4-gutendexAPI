@@ -39,3 +39,32 @@ function toggleNavbar() {
 
     
 }
+
+
+//funcion que muestra los resultados de una busqueda
+//en el maquetado lo unico que hace es mostrar la pag de resultados
+//si estas en la version movil
+
+function showResults() {
+
+    //comprueba si estas en la version movil
+    if (window.innerWidth < 740 ) {
+        //de ser asi, coge la seccion de resultados
+        //y la hace visible
+        let results = document.getElementById("sección-resultados");
+        results.style.display = "block";
+    }
+
+}
+
+function hideResults() {
+
+    //comprueba si estas en la version movil
+    if (window.innerWidth < 740 ) {
+        //de ser asi, coge la seccion de resultados
+        //y la hace visible
+        let results = document.getElementById("sección-resultados");
+        results.style.display = "none";
+    }
+
+}

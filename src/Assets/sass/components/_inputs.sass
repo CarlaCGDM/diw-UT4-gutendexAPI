@@ -11,3 +11,25 @@ input[type='text'], input[type='email'], input[type='password']
 
     @media (max-width: $breakpoint-mobile)
         width: 80vw
+
+select
+    height: 3vh
+    width: 22vw
+    font-size: 0.8em
+    &:hover
+        &::placeholder
+            color: $rojo-oscuro
+
+    @media (max-width: $breakpoint-mobile)
+        width: 80vw
+
+input[type='search']
+    height: 4.5vh
+    width: 80%
+    border: none
+    font-size: 1.05em
+    background-color: transparent
+    &:focus
+        outline: none
+        border: none
+    

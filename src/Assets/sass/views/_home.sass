@@ -1,18 +1,45 @@
 /*PAGINA PRINCIPAL*/
 
-.grid-principal-default
+//dividir la pagina en dos secciones
+.grid-principal
     display: grid
     grid-template-columns: 1fr 1fr
+    font-family: $fuente-principal
+    color: $blanco
     @media (max-width: $breakpoint-mobile)
         grid-template-columns: 1fr
-    .resultados-default
-        font-family: $fuente-principal
-        color: $blanco
+
+    //seccion resultados
+    .resultados
+        z-index: 50
         background-color: $gris-oscuro
         overflow-y: hidden
+
+        //ocultar en movil
         @media (max-width: $breakpoint-mobile)
             display: none
-        .grid-resultados-default
+            position: absolute
+            height: 100vh
+            width: 100vw
+
+        > header
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            padding: 2vh
+            background-color: $rojo-oscuro
+            > small
+                text-align: center
+            > button
+                display: none
+                @media (max-width: $breakpoint-mobile)
+                    display: block
+                    width: 20vw
+                    height: 5vh
+
+
+        .grid-resultados
             grid-template-columns: repeat(auto-fill, minmax(130px, 1fr))
             align-content: baseline
             justify-items: center
@@ -21,10 +48,95 @@
             display: grid
             overflow-y: scroll
             height: 100%
-    .busqueda-default
+
+    //seccion busqueda
+    .busqueda
         background-color: $gris-claro
-        display: grid
-        grid-template-rows: 1fr 1fr
-        grid-template-columns: 1fr
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        @media (max-width: $breakpoint-mobile)
+            overflow-y: scroll
+            gap: 2vh
+            background-color: $gris-oscuro
+
+        //texto de bienvenida
+        > header
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            align-items: left
+            gap: 10px
+            padding: 2.5vw
+            @media (max-width: $breakpoint-mobile)
+                justify-content: flex-start
+
+            > h1
+                font-family: $fuente-secundaria
+                font-size: 3em
+                @media (max-width: $breakpoint-mobile)
+                    font-size: 2em
+                @media (max-width: $breakpoint-mobile-mini)
+                    display: none
+
+        //formulario de busqueda
+        .formulario-busqueda
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 15px
+
+            //barra de busqueda
+            .searchbar
+                height: 5vh
+                width: 45vw
+                border-radius: 20px
+                background-color: $blanco
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+                gap: 10px
+                @media (max-width: $breakpoint-mobile)
+                    width: 90vw
+                > button
+                    padding-left: 10px
+                    &:hover
+                        transform: scale(1.05)
+
+            > .filtros
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                @media (max-width: $breakpoint-mobile)
+                    flex-direction: column
+
+                fieldset
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    gap: 10px
+                    border: none
+                    width: 22vw
+                    @media (max-width: $breakpoint-mobile)
+                        width: 90vw
+                    > .select
+                        display: flex
+                        flex-direction: column
+
+                > div
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    gap: 1vh
+
+                    > button
+                        @media (max-width: $breakpoint-mobile)
+                            width: 40vw
+
+
         
 
