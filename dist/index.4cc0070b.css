@@ -381,13 +381,12 @@ body > main > nav > .nav-footer {
   text-align: center;
 }
 
-.grid-principal .resultados > header > button {
+.grid-principal .resultados > header > img {
   display: none;
 }
 
 @media (max-width: 740px) {
-  .grid-principal .resultados > header > button {
-    width: 20vw;
+  .grid-principal .resultados > header > img {
     height: 5vh;
     display: block;
   }
